@@ -82,9 +82,19 @@ export default async function JournalGrand() {
             }}
             className="flex flex-col items-center gap-4"
           >
-            <button className="border font-galaxie border-[#737373] w-[233px] h-[33px] text-[16px] text-[#737373]">
-              Discover more
-            </button>
+            <button
+  className="
+    border border-[#737373]
+    w-[233px] h-[33px] cursor-pointer
+    font-galaxie text-[16px] text-[#737373]
+    transition-all hover:scale-103 hover:translate-y-1.2 duration-300 ease-in-out
+    hover:text-black
+    hover:border-black
+  "
+>
+  Discover more
+</button>
+
           </div>
         </div>
 

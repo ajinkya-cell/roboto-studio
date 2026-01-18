@@ -15,7 +15,7 @@ export const galaxieCopernicus = localFont({
 export const galaxiePolaris = localFont({
     src :[
         {
-           path: "../public/fonts/GalaxiePolarisCondensed-Medium.otf",
+           path: "../public/fonts/GalaxiePolaris-Book.woff",
       weight: "400",
       style: "normal",  
         },
@@ -24,3 +24,4 @@ export const galaxiePolaris = localFont({
   display: "swap",
 })
 
+//C:\Users\ajink\OneDrive\Desktop\personal - coding - ventures\Roboto\apps\web\public\fonts\GalaxiePolaris-Book.woff

@@ -31,7 +31,7 @@ const Footer = () => {
               <input
                 type="text"
                 placeholder="Search"
-                className="w-full px-4 bg-white py-2 text-[#9C9C9D] font-polaris border border-gray-300 focus:outline-none"
+                className="w-full px-4 bg-white py-2 text-[#9C9C9D] font-polaris placeholder:font-['Potaris']  border border-gray-300 focus:outline-none"
               />
               <button
                 type="submit"

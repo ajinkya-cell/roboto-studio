@@ -17,7 +17,7 @@ export default async function JournalSubscribe() {
   if (!data) notFound()
 
   return (
-    <section className="bg-surface px-4 sm:px-8 md:px-20 pt-12 md:pt-20 pb-20 md:pb-60">
+    <section className="bg-surface px-4 sm:px-8 md:px-20 pt-12 md:pt-20 pb-20 md:pb-50">
       <div className="mx-auto max-w-7xl grid grid-cols-1 md:grid-cols-2 items-center gap-12 ">
 
         {/* Left content */}

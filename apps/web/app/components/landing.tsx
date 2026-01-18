@@ -1,6 +1,7 @@
 import { defineQuery } from "next-sanity";
 import { sanityFetch } from "@/sanity/live";
 import { urlFor } from "@/sanity/image";
+import Link from "next/link";
 
 const HOME_IMAGE_QUERY = defineQuery(`
   *[_type == "page" && slug.current == "home-page"][0]{
@@ -60,16 +61,24 @@ export default async function Landing() {
           justify-center
         "
       >
-        <span className="px-2 cursor-pointer">Fireplaces</span>
+       <Link href="/#fireplaces" className="px-2 hover:text-black transition">
+    Fireplaces
+  </Link>
         <span className="hidden sm:inline">|</span>
 
-        <span className="px-2 cursor-pointer">Lighting</span>
+        <Link href="/#lighting" className="px-2 hover:text-black transition">
+    Lighting
+  </Link>
         <span className="hidden sm:inline">|</span>
 
-        <span className="px-2 cursor-pointer">Furniture</span>
+       <Link href="/#furniture" className="px-2 hover:text-black transition">
+    Furniture
+  </Link>
         <span className="hidden sm:inline">|</span>
 
-        <span className="px-2 cursor-pointer">Journal</span>
+    <Link href="/#journal" className="px-2 hover:text-black transition">
+    Journal
+  </Link>
       </div>
     </div>
   );

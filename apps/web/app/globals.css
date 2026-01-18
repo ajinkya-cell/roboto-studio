@@ -8,6 +8,14 @@
 
 }
 
+@font-face {
+  font-family: 'Potaris';
+  src:url('/fonts/GalaxiePolaris-Book.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
 .font-galaxie {
   font-family: var(--font-galaxie);
 }

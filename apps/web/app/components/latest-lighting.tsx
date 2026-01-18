@@ -9,7 +9,9 @@ async function getLatestFeatured() {
       price,
       "imageUrl": Image.asset->url
     }`
-  return client.fetch(query)
+  return client.fetch(query, {}, {
+    next: { revalidate: 60 }, // ⬅️ THIS LINE FIXES IT
+  })
 }
 
 export default async function OurLatestLightings() {

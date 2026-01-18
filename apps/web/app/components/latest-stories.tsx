@@ -36,7 +36,7 @@ export default async function OurLatestStories() {
               <div className="relative w-full  overflow-hidden">
                 <Image
                   src={ch.imageUrl}
-                  alt={ch.type}
+                  alt={ch.excerpt}
                   width={333}
                   height={244}
                   className="object-cover group-hover:scale-105 transition-transform duration-300"

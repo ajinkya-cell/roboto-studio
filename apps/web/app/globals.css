@@ -12,6 +12,10 @@
   font-family: var(--font-galaxie);
 }
 
+.font-polaris{
+  font-family : var(--font-polaris)
+}
+
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);

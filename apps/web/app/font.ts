@@ -11,3 +11,16 @@ export const galaxieCopernicus = localFont({
   variable: "--font-galaxie",
   display: "swap",
 })
+
+export const galaxiePolaris = localFont({
+    src :[
+        {
+           path: "../public/fonts/GalaxiePolarisCondensed-Medium.otf",
+      weight: "400",
+      style: "normal",  
+        },
+    ],
+      variable: "--font-polaris",
+  display: "swap",
+})
+

@@ -26,7 +26,7 @@ export default async function OurLatestFurniture() {
     MozOsxFontSmoothing: 'grayscale',
   }}
         className="font-galaxie text-center tracking-wide text-black text-[21px]  mb-6">
-          Our Latest Chimneypieces
+          Our Latest Furniture
         </h2>
        
 

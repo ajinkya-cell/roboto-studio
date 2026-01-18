@@ -1,30 +1,29 @@
-import { defineQuery } from "next-sanity";
-import { sanityFetch } from "@/sanity/live";
-import { urlFor } from "@/sanity/image";
+// components/landing.tsx
+import { client } from "@/sanity/client";
+import { notFound } from "next/navigation";
 import Link from "next/link";
 
-const HOME_IMAGE_QUERY = defineQuery(`
-  *[_type == "page" && slug.current == "home-page"][0]{
-    Image
-  }
-`);
+async function getPage() {
+  const query = `*[_type == "page" && slug.current == "home-page"][0]{
+    "imageUrl": Image.asset->url
+  }`;
+
+  return client.fetch(query, {}, {
+    next: { revalidate: 60 }, // ✅ same fix as others
+  });
+}
 
 export default async function Landing() {
-  const { data } = await sanityFetch({
-    query: HOME_IMAGE_QUERY,
-  });
-
-  const imageUrl = data?.Image
-    ? urlFor(data.Image).width(1600).quality(90).url()
-    : null;
+  const data = await getPage();
+  if (!data) notFound();
 
   return (
     <div>
       {/* IMAGE */}
       <main className="w-full px-0 md:px-10">
-        {imageUrl && (
+        {data.imageUrl && (
           <img
-            src={imageUrl}
+            src={data.imageUrl}
             alt="Home page image"
             className="
               w-full
@@ -61,24 +60,24 @@ export default async function Landing() {
           justify-center
         "
       >
-       <Link href="/#fireplaces" className="px-2 hover:text-black transition">
-    Fireplaces
-  </Link>
+        <Link href="/#fireplaces" className="px-2 hover:text-black transition">
+          Fireplaces
+        </Link>
         <span className="hidden sm:inline">|</span>
 
         <Link href="/#lighting" className="px-2 hover:text-black transition">
-    Lighting
-  </Link>
+          Lighting
+        </Link>
         <span className="hidden sm:inline">|</span>
 
-       <Link href="/#furniture" className="px-2 hover:text-black transition">
-    Furniture
-  </Link>
+        <Link href="/#furniture" className="px-2 hover:text-black transition">
+          Furniture
+        </Link>
         <span className="hidden sm:inline">|</span>
 
-    <Link href="/#journal" className="px-2 hover:text-black transition">
-    Journal
-  </Link>
+        <Link href="/#journal" className="px-2 hover:text-black transition">
+          Journal
+        </Link>
       </div>
     </div>
   );

@@ -1,5 +1,10 @@
 // components/Footer.js
+import { Barlow_Condensed } from 'next/font/google';
 import React from 'react';
+const barlow = Barlow_Condensed({
+  weight: ['300','400'],
+  subsets: ['latin'],
+})
 
 const Footer = () => {
   return (
@@ -27,11 +32,11 @@ const Footer = () => {
           </h3>
 
           <form className="flex flex-col">
-            <div className="flex flex-col sm:flex-row gap-4 mb-4">
+            <div className="flex flex-col sm:flex-row gap-[3px] mb-4">
               <input
                 type="text"
                 placeholder="Search"
-                className="w-full px-4 bg-white py-2 text-[#9C9C9D] font-polaris placeholder:font-['Potaris']  border border-gray-300 focus:outline-none"
+                className={`w-full px-4 bg-white py-2 text-[#9C9C9D] ${barlow.className} placeholder:text-[20px] placeholder:font-light  focus:outline-none`}
               />
               <button
                 type="submit"

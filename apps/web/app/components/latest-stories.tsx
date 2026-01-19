@@ -3,7 +3,7 @@ import {client} from "@/sanity/client"
 import Image from 'next/image'
 
 async function getLatestFeatured() {
-  const query = `*[_type == "journal" && featured == true]{
+  const query = `*[_type == "journal" && featured == true] |  order(title asc) {
       title,
       excerpt,
       price,

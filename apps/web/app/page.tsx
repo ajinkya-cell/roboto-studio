@@ -16,7 +16,7 @@ import Footer from "./components/footer";
 export default function Home() {
   return (
    <>
-  <div className="bg-surface h-[8000px]">
+  <div className="bg-surface h-[7000px]">
      <Navbar/>
    <Landing/>
    <FirePage/>

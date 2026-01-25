@@ -63,10 +63,8 @@ export default async function LightingPage() {
 
           <div
             style={{
-              WebkitTextStroke: '0.45px currentColor',
-              textShadow: '0 0 0.4px currentColor',
-              WebkitFontSmoothing: 'antialiased',
-              MozOsxFontSmoothing: 'grayscale',
+              WebkitTextStroke: '0.28px currentColor',
+             
             }}
             className="flex flex-col items-center gap-4"
           >

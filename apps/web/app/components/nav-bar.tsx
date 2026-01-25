@@ -16,7 +16,7 @@ export const Navbar = () => {
 
   return (
     <>
-      <nav className="bg-surface px-10 h-20 w-full flex items-center justify-between border-b border-gray-200 relative z-[9999]">
+      <nav className="bg-surface px-10 h-20 w-full flex items-center justify-between border-b border-gray-200 relative z-[9997]">
 
         <div>
           <Link href="/">
@@ -44,7 +44,7 @@ export const Navbar = () => {
       {open && (
         <div
           onClick={() => setOpen(false)}
-          className="fixed inset-0 bg-black/20 backdrop-blur-sm z-[9998]"
+          className="fixed inset-0 bg-black/20 backdrop-blur-sm z-[9999]"
         />
       )}
 

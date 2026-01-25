@@ -1,5 +1,5 @@
 // components/landing.tsx
-"use client"
+
 import { client } from "@/sanity/client";
 import { notFound } from "next/navigation";
 import Link from "next/link";

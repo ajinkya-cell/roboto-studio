@@ -15,7 +15,7 @@ async function getLatestFeatured() {
 }
 
 export default async function OurLatestFurniture() {
-  const chimneys = await getLatestFeatured()
+  const furniture = await getLatestFeatured()
 
   return (
     <section className="bg-[#E3E3E3] px-10 ">
@@ -34,7 +34,7 @@ export default async function OurLatestFurniture() {
 
       <div className="flex justify-center w-full">
           <div className=" grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-[39px]">
-          {chimneys.map((ch: any) => (
+          {furniture.map((ch: any) => (
             <div key={ch.title} className="group cursor-pointer">
               <div className="h-[280px] flex items-center justify-center">
                 <Image

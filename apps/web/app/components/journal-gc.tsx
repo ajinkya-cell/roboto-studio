@@ -19,7 +19,7 @@ export default async function JournalGrand() {
   if (!data) notFound()
 
   return (
-    <section id="journal" className="bg-surface px-4 sm:px-8 md:px-20 pt-12 md:pt-20 pb-20">
+    <section id="journal" className="bg-[#DFDAD7] px-4 sm:px-8 md:px-20 pt-12 md:pt-20 pb-20">
       <div className="mx-auto max-w-7xl grid grid-cols-1 md:grid-cols-2 items-center gap-12">
 
         {/* Left content */}
@@ -55,8 +55,8 @@ export default async function JournalGrand() {
           </h2>
 
           <p
-            style={{
-              WebkitTextStroke: '0.45px currentColor',
+           style={{
+              WebkitTextStroke: '0.25px currentColor',
               textShadow: '0 0 0.4px currentColor',
               WebkitFontSmoothing: 'antialiased',
               MozOsxFontSmoothing: 'grayscale',

@@ -44,7 +44,7 @@ export default async function FurniturePage() {
 
           <p
             style={{
-              WebkitTextStroke: '0.45px currentColor',
+              WebkitTextStroke: '0.25px currentColor',
               textShadow: '0 0 0.4px currentColor',
               WebkitFontSmoothing: 'antialiased',
               MozOsxFontSmoothing: 'grayscale',

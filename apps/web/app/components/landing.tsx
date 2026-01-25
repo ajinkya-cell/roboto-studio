@@ -1,7 +1,14 @@
 // components/landing.tsx
+"use client"
 import { client } from "@/sanity/client";
 import { notFound } from "next/navigation";
 import Link from "next/link";
+import { motion } from "framer-motion";
+
+// const fadeUp = {
+//   hidden: { opacity: 0, y: 24 },
+//   visible: { opacity: 1, y: 0 },
+// };
 
 async function getPage() {
   const query = `*[_type == "page" && slug.current == "home-page"][0]{
@@ -21,6 +28,13 @@ export default async function Landing() {
     <div>
       {/* IMAGE */}
       <main className="w-full px-0 md:px-10">
+        {/* <motion.div
+          initial="hidden"
+          animate="visible"
+          variants={fadeUp}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+          className="text-center"
+        > */}
         {data.imageUrl && (
           <img
             src={data.imageUrl}
@@ -34,6 +48,7 @@ export default async function Landing() {
             "
           />
         )}
+        {/* </motion.div> */}
       </main>
 
       {/* CATEGORY NAV */}

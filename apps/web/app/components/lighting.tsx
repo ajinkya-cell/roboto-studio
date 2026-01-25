@@ -43,8 +43,8 @@ export default async function LightingPage() {
           </h2>
 
           <p
-            style={{
-              WebkitTextStroke: '0.45px currentColor',
+           style={{
+              WebkitTextStroke: '0.25px currentColor',
               textShadow: '0 0 0.4px currentColor',
               WebkitFontSmoothing: 'antialiased',
               MozOsxFontSmoothing: 'grayscale',

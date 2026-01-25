@@ -32,7 +32,9 @@ export const Navbar = () => {
 
         <div className="flex items-center  gap-6">
           <Image className="cursor-pointer" src="/search.png" alt="Search" width={22} height={22} />
+         <Link href="/pages/about">
           <Image  className="cursor-pointer" src="/message.png" alt="Messages" width={22} height={22} />
+         </Link>
 
           <button onClick={() => setOpen(true)} aria-label="Open menu">
             <Image  className="cursor-pointer" src="/folder.png" alt="Menu" width={22} height={22} />

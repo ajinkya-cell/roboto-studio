@@ -15,7 +15,7 @@ async function getLatestFeatured() {
 }
 
 export default async function OurLatestStories() {
-  const chimneys = await getLatestFeatured()
+  const stories = await getLatestFeatured()
 
   return (
     <section className="bg-[#E3E3E3] px-10 ">
@@ -28,12 +28,12 @@ export default async function OurLatestStories() {
     MozOsxFontSmoothing: 'grayscale',
   }}
         className="font-galaxie text-center tracking-wide text-black text-[21px]  mb-6">
-          Our Latest Chimneypieces
+          See more of our latest stories
         </h2>
        
 
         <div className=" grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-[39px]">
-          {chimneys.map((ch: any) => (
+          {stories.map((ch: any) => (
             <div key={ch.title} className="group cursor-pointer">
               <div className="relative w-full  overflow-hidden">
                 <Image

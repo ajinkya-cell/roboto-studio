@@ -35,7 +35,7 @@ export default async function FireplaceListingPage() {
 
   return (
     <section className="bg-surface px-4 sm:px-8 md:px-20 pt-12 md:pt-20 pb-20">
-      <div className="mx-auto h-screen max-w-7xl">
+      <div className="mx-auto  max-w-7xl">
 
         {/* TITLE */}
         <h1

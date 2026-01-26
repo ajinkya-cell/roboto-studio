@@ -1,4 +1,4 @@
-// components/Footer.js
+
 import { Barlow_Condensed } from 'next/font/google';
 import React from 'react';
 const barlow = Barlow_Condensed({
@@ -11,7 +11,7 @@ const Footer = () => {
     <footer className="bg-[#E3E3E3] font-galaxie py-10">
       <div className="max-w-screen mx-4 sm:mx-6 md:mx-10 grid grid-cols-1 md:grid-cols-5 gap-8">
 
-        {/* First Section */}
+        
         <div className="col-span-1 w-full md:w-[257px] text-[16px]">
           <p className="text-[#9C9C9D]">Tel: +44 (0) 207 730 2122</p>
           <p className="text-[#9C9C9D]">95-97 Pimlico Rd</p>
@@ -22,10 +22,10 @@ const Footer = () => {
           <p className="text-[#9C9C9D]">hello@jamb.co.uk</p>
         </div>
 
-        {/* Spacer */}
+       
         <div className="hidden md:block"></div>
 
-        {/* Newsletter */}
+        
         <div className="col-span-1 md:col-span-2 space-y-6">
           <h3 className="text-lg font-semibold text-[#9C9C9D] mb-4">
             Newsletter
@@ -53,10 +53,10 @@ const Footer = () => {
           </form>
         </div>
 
-        {/* Categories */}
+       
         <div className="col-span-1 md:col-span-5 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-8">
 
-          {/* Chimneypieces */}
+         
           <div className="w-full md:w-[257px]">
             <div className="h-px bg-[#9C9C9D] mb-3"></div>
             <h3 className="text-[16px] text-black font-semibold mb-2">
@@ -85,7 +85,7 @@ const Footer = () => {
             </h3>
           </div>
 
-          {/* Lighting */}
+        
           <div className="w-full md:w-[257px]">
             <div className="h-px bg-[#9C9C9D] mb-3"></div>
             <h3 className="text-[16px] text-black font-semibold mb-2">
@@ -101,7 +101,7 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Furniture */}
+       
           <div className="w-full md:w-[257px]">
             <div className="h-px bg-[#9C9C9D] mb-3"></div>
             <h3 className="text-[16px] text-black font-semibold mb-2">
@@ -131,7 +131,7 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Journal */}
+        
           <div className="w-full md:w-[257px]">
             <div className="h-px bg-[#9C9C9D] mb-3"></div>
             <h3 className="text-[16px] text-black font-semibold mb-2">Journal</h3>
@@ -144,7 +144,7 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* About */}
+        
           <div className="w-full md:w-[257px]">
             <div className="h-px bg-[#9C9C9D] mb-3"></div>
             <h3 className="text-[16px] text-black font-semibold mb-2">About</h3>

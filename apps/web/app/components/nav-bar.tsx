@@ -42,7 +42,7 @@ export const Navbar = () => {
         </div>
       </nav>
 
-      {/* BACKDROP */}
+     
       {open && (
         <div
           onClick={() => setOpen(false)}
@@ -50,7 +50,7 @@ export const Navbar = () => {
         />
       )}
 
-      {/* MODAL */}
+    
       <div
         className={`
           fixed top-[90px] right-10 w-[260px]

@@ -1,4 +1,4 @@
-// components/FurniturePage.tsx
+
 import { client } from '@/sanity/client'
 import Image from 'next/image'
 import { notFound } from 'next/navigation'
@@ -10,7 +10,7 @@ async function getPage() {
       "imageUrl": Image.asset->url
     }`
   return client.fetch(query, {}, {
-    next: { revalidate: 60 }, // ⬅️ THIS LINE FIXES IT
+    next: { revalidate: 60 }, 
   })
 }
 
@@ -22,7 +22,7 @@ export default async function FirePage() {
     <section id="fireplaces" className="bg-surface px-4 sm:px-8 md:px-20 pt-12 md:pt-20">
       <div className="mx-auto max-w-7xl grid grid-cols-1 md:grid-cols-2 items-center gap-12">
 
-        {/* Left content */}
+       
         <div className="max-w-[509px] mx-auto">
           <h2
             style={{
@@ -92,7 +92,7 @@ export default async function FirePage() {
           </div>
         </div>
 
-        {/* Right image */}
+        
         <div className="relative w-full flex justify-center">
           <Image
             src={data.imageUrl}

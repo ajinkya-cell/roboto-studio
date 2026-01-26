@@ -74,7 +74,7 @@ export function Navbar() {
               >
                 {item.label}
 
-                {/* Subtle underline */}
+              
                 <span
                   className={`
                     absolute left-0 -bottom-1

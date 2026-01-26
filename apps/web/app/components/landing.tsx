@@ -1,4 +1,4 @@
-// components/landing.tsx
+
 
 import { client } from "@/sanity/client";
 import { notFound } from "next/navigation";
@@ -16,7 +16,7 @@ async function getPage() {
   }`;
 
   return client.fetch(query, {}, {
-    next: { revalidate: 60 }, // ✅ same fix as others
+    next: { revalidate: 60 }, 
   });
 }
 
@@ -26,7 +26,7 @@ export default async function Landing() {
 
   return (
     <div>
-      {/* IMAGE */}
+      
       <main className="w-full px-0 md:px-10">
         {/* <motion.div
           initial="hidden"
@@ -51,7 +51,7 @@ export default async function Landing() {
         {/* </motion.div> */}
       </main>
 
-      {/* CATEGORY NAV */}
+      
       <div
         style={{
           WebkitTextStroke: "0.35px currentColor",

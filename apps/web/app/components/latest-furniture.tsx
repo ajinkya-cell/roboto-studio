@@ -1,4 +1,4 @@
-// components/OurLatestChimneys.tsx
+
 import {client} from "@/sanity/client"
 import Image from 'next/image'
 
@@ -10,7 +10,7 @@ async function getLatestFeatured() {
       "imageUrl": Image.asset->url
     }`
   return client.fetch(query, {}, {
-    next: { revalidate: 60 }, // ⬅️ THIS LINE FIXES IT
+    next: { revalidate: 60 }, 
   })
 }
 

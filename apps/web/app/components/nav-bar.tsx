@@ -72,7 +72,7 @@ export const Navbar = () => {
                   font-galaxie text-[16px]
                   text-[#9C9C9D]
                   transition-colors duration-300
-                  hover:text-black hover:bg-white/40
+                  hover:text-black hover:bg-white/30
                 "
               >
                 {item.label}
